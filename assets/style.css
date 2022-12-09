@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #252525;
+    
+    overflow-y: scroll;
+    
+}
+nav{
+    background-color:rgba(0, 0, 0, 0);
+    height: 60px;
+    line-height: 60px;
+    align-content: center;
+    justify-content: space-around;
+    margin-left: 50px;
+    padding-left: 20px;
+}
+li {
+    display: inline;
+    float: left;
+    margin-right: 50px;
+    border-radius: 3px;
+}
+header{
+    background-image: url('../assets/image/sea.jpg');
+    background-size:100% 100%;
+    height: 1000px;
+    width: auto;
+  
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: large;
+    border-radius: 2px;
+}
+li a:hover{
+    background-color:  #A3D8F4;
+    color: #2C4E7E;
+}
+nav button{
+    float: right;
+    margin-top: 15px;
+    margin-right: 50px;
+    background-color: #2C4E7E;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    padding: 5px 10px;
+
+}
+nav button:hover{
+    background-color: #A3D8F4;
+}
+nav button a:hover{
+    color: #0F1B33;
+}
+.jumbotron{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    height: 100%;
+    justify-content: center;
+}
+.cont{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.serv-butt{
+    position: absolute;
+    background-color:#2C4E7E ;
+    width: 250px;
+    height: 100px;
+    border: 5px solid #5691CB;
+    color: #fff;
+    font-size: larger;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 100px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.serv-butt:hover{
+    background-color: #A3D8F4;
+    color: #2C4E7E;
+}
+.card img{
+    scale: 0.5;
+    transition: 1s;
+    margin-top: 40px;
+}
+.card:hover img{
+    scale: 0.9;
+}
+.card:hover{
+    background-color: #5691CB;
+}
+.php{
+    scale: 0.8;
+}
+.profil{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #A3D8F4;
+    position: relative;
+    left: 60px;
+    justify-self: center;
+}
+.profil img{
+    bottom: 10px;
+    left: 0px;
+    position: absolute;
+    border-radius: 50%;
+}
+.turtle{
+    transform: scaleX(-1)rotate(20deg);
+    scale: 0.8;
+}
+.greet{
+   flex-grow: 2;
+    color: #fff;
+}
+.left{
+    flex-grow: 1;   
+}
+.jumbotron .img img{
+    animation:move 10s infinite ;
+    position: relative;
+    transform: rotate(-20deg)scaleX(-1);
+}
+@keyframes move{
+    0%   {top: 0px;}
+    25%  {top: 50px;}
+    50% {top: 0px;}
+    75%  {top: 50px;}
+    100% {top: 0px;}
+}
+main{
+    background-color: #0F1B33;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+article{
+    background-color: #5691CB;
+    padding: 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: larger;
+
+}
+article h2{
+    text-align: center;
+}
+aside {
+    float: right;
+    width: 25%;
+    color: #fff;
+    background-color: #5691CB;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+}
+.about{
+    float: left;
+    width: 75%;
+    margin-right: 10px;
+}
+.about p{
+    font-size: 26px;
+    text-transform: capitalize;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.service h2{
+    text-align: center;
+}
+.service{
+    width: 100%;
+    padding: 50px;
+    display: flexbox;
+}
+.card{
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #2C4E7E;
+    cursor: pointer;
+    border: 10px solid #2C4E7E;
+}
+.card h3{
+    text-align: center;
+}
+.experience{
+    font-size: 26px;
+}
+.content{
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+}
+
+.content .service{
+    margin-bottom: 10px;
+    padding: 50px;
+}
+footer{
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+    background-color: #5691CB;
+    padding: 50px;
+    color: #fff;
+    font-size: larger;
+}
+footer .contact{
+    float: left;
+}
+footer .loc{
+    float: right;
+
+}
